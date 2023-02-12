@@ -70,6 +70,18 @@ flutter:
     - assets/images/homescreen/hotdeal.png
     - assets/images/homescreen/people.png
     - assets/images/homescreen/pennstate.png
+    - assets/images/homescreen/category_icon.png
+    - assets/images/homescreen/icon_comment.png
+    - assets/images/homescreen/icon_like.png
+    - assets/images/category/icon_camera.png
+    - assets/images/category/icon_car_leather_seat.png
+    - assets/images/category/icon_coupon.png
+    - assets/images/category/icon_emoticon.png
+    - assets/images/category/icon_home.png
+    - assets/images/category/icon_keyword.png
+    - assets/images/category/icon_near_me.png
+    - assets/images/category/icon_product.png
+    - assets/images/category/icon_user_group.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
