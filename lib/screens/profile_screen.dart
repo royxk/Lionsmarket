@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
-import 'package:widget_practice/screens/settings_screen.dart';
+import 'package:widget_practice/screens//Main_screens/settings_screen.dart';
 import 'package:widget_practice/widgets/profile/my_trade_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -63,9 +63,7 @@ class ProfileScreen extends StatelessWidget {
                   child: Ink(
                     width: 100,
                     height: 50,
-                    decoration: BoxDecoration(
-                        color: Color.fromRGBO(136, 136, 136, 1),
-                        borderRadius: BorderRadius.circular(10)),
+                    decoration: BoxDecoration(color: Color.fromRGBO(136, 136, 136, 1), borderRadius: BorderRadius.circular(10)),
                     child: Center(
                         child: Text(
                       "Edit",

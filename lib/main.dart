@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:widget_practice/screens/home_screen.dart';
-import 'package:widget_practice/screens/hotdeal_screen.dart';
-import 'package:widget_practice/screens/list_screen.dart';
-import 'package:widget_practice/screens/location_screen.dart';
+
+// Main screen : Used item, community, hot deal, chat, profile
+import './screens/Main_screens/main_page_screen.dart';
+import './screens//Main_screens/list_screen.dart';
+import './screens//Main_screens/hotdeal_screen.dart';
+import './screens/message_screen.dart';
+import './screens/profile_screen.dart';
+
+// Login screen import
+import 'package:widget_practice/screens//Main_screens/location_screen.dart';
 import 'package:widget_practice/screens/social_login_screen.dart';
-import 'package:widget_practice/screens/message_screen.dart';
-import 'package:widget_practice/screens/profile_screen.dart';
+
+
+
+
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +30,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SocialLogin(),
+      home: MyHomePage(),
+      routes: { '/social_login':(context) => SocialLogin(),}
     );
   }
 }
@@ -37,7 +46,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int navigation_index = 0;
   List<Widget> screens = [
-    HomeScreen(),
+    MainPageScreen(),
     ListScreen(),
     HotDealScreen(),
     MessageScreen(),

@@ -15,7 +15,7 @@ class MyTradeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => callback,
+      onTap: () => callback(),
       child: Container(
         height: 40,
         child: Row(children: [

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:widget_practice/screens/social_login_screen.dart';
 
-import '../widgets/profile/my_trade_widget.dart';
+import '/widgets/profile/my_trade_widget.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -117,7 +118,10 @@ class SettingsScreen extends StatelessWidget {
                 ),
                 MyTradeWidget(
                   title: "Sign out",
-                  callback: () {},
+                  callback: () {
+                    Navigator.of(context).pop();
+                    Navigator.of(context).popAndPushNamed("/social_login");
+                  },
                 ),
                 MyTradeWidget(
                   title: "Delete Account",

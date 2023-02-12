@@ -6,11 +6,11 @@ import 'package:widget_practice/screens/search_screen.dart';
 import 'package:widget_practice/widgets/home/category_widget.dart';
 import 'package:widget_practice/widgets/home/location_dropdown_widget.dart';
 
-import '../widgets/image_widget.dart';
-import '../list_information.dart';
+import '/widgets/image_widget.dart';
+import '/list_information.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class MainPageScreen extends StatelessWidget {
+  const MainPageScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
