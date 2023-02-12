@@ -155,7 +155,9 @@ class _SocialLoginState extends State<SocialLogin> {
                   style: TextStyle(fontSize: 17),
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/signup');
+                    },
                     child: Text('Sign up', style: TextStyle(decoration: TextDecoration.underline, fontSize: 17)))
               ],
             ),

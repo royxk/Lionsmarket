@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:widget_practice/screens/Login_screens/signup_screen.dart';
+import 'package:widget_practice/screens/emailLogin_screen.dart';
 
 // Main screen : Used item, community, hot deal, chat, profile
 import './screens/Main_screens/main_page_screen.dart';
@@ -11,10 +13,6 @@ import './screens/profile_screen.dart';
 import 'package:widget_practice/screens//Main_screens/location_screen.dart';
 import 'package:widget_practice/screens/social_login_screen.dart';
 
-
-
-
-
 void main() {
   runApp(const MyApp());
 }
@@ -26,13 +24,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(),
-      routes: { '/social_login':(context) => SocialLogin(),}
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: MyHomePage(),
+        routes: {
+          '/social_login': (context) => SocialLogin(),
+          '/signup' :(context) => SignupScreen(),
+          '/email_login':(context) => EmailLogin(),
+        });
   }
 }
 
@@ -74,21 +75,11 @@ class _MyHomePageState extends State<MyHomePage> {
           showUnselectedLabels: false,
           onTap: (value) => bottomNavigationHandler(value),
           items: [
-            BottomNavigationBarItem(
-                icon: Image.asset('assets/images/homescreen/home.png'),
-                label: 'Home'),
-            BottomNavigationBarItem(
-                icon: Image.asset('assets/images/homescreen/people.png'),
-                label: 'People'),
-            BottomNavigationBarItem(
-                icon: Image.asset('assets/images/homescreen/hotdeal.png'),
-                label: 'Hot deal'),
-            BottomNavigationBarItem(
-                icon: Image.asset('assets/images/homescreen/chat.png'),
-                label: 'Chat'),
-            BottomNavigationBarItem(
-                icon: Image.asset('assets/images/homescreen/customer.png'),
-                label: 'Customer'),
+            BottomNavigationBarItem(icon: Image.asset('assets/images/homescreen/home.png'), label: 'Home'),
+            BottomNavigationBarItem(icon: Image.asset('assets/images/homescreen/people.png'), label: 'People'),
+            BottomNavigationBarItem(icon: Image.asset('assets/images/homescreen/hotdeal.png'), label: 'Hot deal'),
+            BottomNavigationBarItem(icon: Image.asset('assets/images/homescreen/chat.png'), label: 'Chat'),
+            BottomNavigationBarItem(icon: Image.asset('assets/images/homescreen/customer.png'), label: 'Customer'),
           ]),
     );
   }
