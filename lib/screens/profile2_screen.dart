@@ -27,7 +27,7 @@ class profile2 extends StatelessWidget {
       children: [
         Container(
           height: 150,
-          color: Colors.white,
+          color: Colors.blue,
           child: Center(
             child: Text("Connect with your neightbors",
               style: TextStyle(
