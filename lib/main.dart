@@ -3,7 +3,7 @@ import 'package:widget_practice/screens/home_screen.dart';
 import 'package:widget_practice/screens/hotdeal_screen.dart';
 import 'package:widget_practice/screens/list_screen.dart';
 import 'package:widget_practice/screens/location_screen.dart';
-import 'package:widget_practice/screens/login_screen.dart';
+import 'package:widget_practice/screens/social_login_screen.dart';
 import 'package:widget_practice/screens/message_screen.dart';
 import 'package:widget_practice/screens/profile_screen.dart';
 
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(),
+      home: SocialLogin(),
     );
   }
 }

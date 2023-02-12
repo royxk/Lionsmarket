@@ -11,17 +11,11 @@ class SearchScreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_rounded,
-            color: Colors.black,
-            size: 23,
-          ),
-          onPressed: (() {
-            Navigator.of(context).pop();
-          }),
-        ),
+        // Go back button
+        automaticallyImplyLeading: true,
+        iconTheme: IconThemeData(color: Colors.black),
         actions: [
+          // Notification button
           IconButton(
             onPressed: () {},
             icon: const Icon(
@@ -58,7 +52,7 @@ class SearchScreen extends StatelessWidget {
             SizedBox(
               height: 15,
             ),
-            // Recent search
+            // Trending section
             Container(
               child: Column(
                 children: [
@@ -130,8 +124,8 @@ class SearchScreen extends StatelessWidget {
             SizedBox(
               height: 15,
             ),
+            // Recent Search
             Container(
-              height: 500,
               child: Column(
                 children: [
                   Align(
